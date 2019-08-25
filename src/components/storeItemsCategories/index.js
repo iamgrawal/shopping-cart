@@ -7,6 +7,12 @@ export default class StoreItemsCategories extends Component {
 	};
 
 	render() {
-		return <div>StoreItemsCategories</div>;
+		return (
+			<div className="col-md-3 store-items-container">
+				<div className="container-fluid">
+					<ul className="store-categories-container"></ul>
+				</div>
+			</div>
+		);
 	}
 }

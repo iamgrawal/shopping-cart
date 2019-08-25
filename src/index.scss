@@ -69,6 +69,16 @@ body {
   width: 60%;
 }
 
+.store-items-container {
+  height: calc(100vh - 175px);
+}
+
+.store-categories-container,
+.store-details-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
 /* Cart Column */
 
 .cart-column {
@@ -106,6 +116,7 @@ body {
   width: 90%;
   margin: 8px 5%;
   resize: none;
+  border-radius: 4px;
 }
 
 .checkout {
@@ -123,4 +134,6 @@ body {
   height: calc(100vh - 325.81px);
   background-color: #fff;
   margin: 8px;
+  border-radius: 4px;
+  overflow-y: scroll;
 }

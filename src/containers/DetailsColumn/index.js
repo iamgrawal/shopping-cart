@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import StoreHeader from '../../components/storeHeader';
 import StoreItemsCategories from '../../components/storeItemsCategories';
-import StoreItemsBrowser from '../../components/storeItemsBrowser';
+import StoreItemsDetails from '../../components/storeItemsDetails';
 
 export default class DetailsColumn extends Component {
 	static propTypes = {
@@ -16,12 +16,8 @@ export default class DetailsColumn extends Component {
 				<div className="container-fluid">
 					<StoreHeader />
 					<div className="row">
-						<div className="col-md-4">
-							<StoreItemsCategories />
-						</div>
-						<div className="col-md-8">
-							<StoreItemsBrowser />
-						</div>
+						<StoreItemsCategories />
+						<StoreItemsDetails />
 					</div>
 				</div>
 			</main>
