@@ -11,12 +11,14 @@ export default class Navbar extends Component {
 
 	render() {
 		return (
-			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a className="navbar-brand" href="#">
-					Navbar
-				</a>
-				<SearchBar />
-				<ProfileActions />
+			<nav className="navbar navbar-expand-lg navbar-dark">
+				<div className="container">
+					<a className="navbar-brand" href="#">
+						Navbar
+					</a>
+					<SearchBar />
+					{/* <ProfileActions /> */}
+				</div>
 			</nav>
 		);
 	}

@@ -1,8 +1,13 @@
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
 
-.container-fluid,
-.row {
+.navbar {
+  background-color: rgb(23, 30, 48);
+  ;
+}
+
+.cart-column,
+.details-column {
   height: calc(100vh - 56px);
 }
 
@@ -13,4 +18,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.heading {
+  font-size: 28px;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0.5rem;
+}
+
+.checkout-actions {
+  flex-direction: column;
+  padding: 12px 12px 18px 12px;
+  position: sticky;
+  bottom: 0;
+}
+
+.subtotal {
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.subtotal span {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: calc(100% - 120px)
+}
+
+.instructions-box {
+  height: 48px;
+  width: 90%;
+  margin: 8px 5%;
+}
+
+.checkout {
+  width: 50%;
+  margin: 0 25%;
+  border: 1px solid rgb(0, 192, 139);
+  border-radius: 4px;
+  height: 40px;
+  background-color: rgb(0, 192, 139);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.cart-items-container {
+  height: calc(100vh - 325.81px);
+  background-color: #fff;
+  margin: 8px;
 }

@@ -7,6 +7,10 @@ export default class DetailsColumn extends Component {
 	};
 
 	render() {
-		return <div>DetailsColumn</div>;
+		return (
+			<main role="main" className="col-md-8 details-column">
+				DetailsColumn
+			</main>
+		);
 	}
 }
