@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import SearchBar from '../../components/searchBar';
 import ProfileActions from '../../components/profileActions';
 
 export default class Navbar extends Component {
-	static propTypes = {
-		prop: PropTypes
-	};
+	// static propTypes = {
+	// 	prop: PropTypes
+	// };
 
 	render() {
 		return (

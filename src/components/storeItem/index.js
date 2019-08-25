@@ -12,7 +12,7 @@ export default class StoreItem extends Component {
 		const { item } = this.props;
 		return (
 			<li>
-				<div class="store-item">
+				<div className="store-item">
 					<img src={imagePlaceholder} alt="imagePlaceholder" />
 					<div className="item">
 						<span className="item-name">{item.itemName}</span>

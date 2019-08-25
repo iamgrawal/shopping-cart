@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import itemsList from '../../utils/items-list';
 
 export default class StoreItemsCategories extends Component {
-	static propTypes = {
-		prop: PropTypes
-	};
+	// static propTypes = {
+	// 	prop: PropTypes
+	// };
 
 	render() {
 		return (

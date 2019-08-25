@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faShoppingCart,
@@ -8,9 +8,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 export default class ProfileActions extends Component {
-	static propTypes = {
-		prop: PropTypes
-	};
+	// static propTypes = {
+	// 	prop: PropTypes
+	// };
 
 	render() {
 		return (
