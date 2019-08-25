@@ -17,7 +17,7 @@ export default class Navbar extends Component {
 						Navbar
 					</a>
 					<SearchBar />
-					{/* <ProfileActions /> */}
+					<ProfileActions />
 				</div>
 			</nav>
 		);

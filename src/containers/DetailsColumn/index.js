@@ -15,7 +15,7 @@ export default class DetailsColumn extends Component {
 			<main role="main" className="col-md-8 container-fluid details-column">
 				<div className="container-fluid">
 					<StoreHeader />
-					<div className="row">
+					<div className="row items-container">
 						<StoreItemsCategories />
 						<StoreItemsDetails />
 					</div>

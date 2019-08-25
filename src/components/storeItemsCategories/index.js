@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import itemsList from '../../utils/items-list';
 
 export default class StoreItemsCategories extends Component {
 	static propTypes = {
@@ -8,9 +9,13 @@ export default class StoreItemsCategories extends Component {
 
 	render() {
 		return (
-			<div className="col-md-3 store-items-container">
+			<div className="col-md-4 store-items-container">
 				<div className="container-fluid">
-					<ul className="store-categories-container"></ul>
+					<ul className="store-categories-container">
+						{Object.keys(itemsList).map((item, index) => {
+							return <li key={`categories-${index}`}>{item}</li>;
+						})}
+					</ul>
 				</div>
 			</div>
 		);

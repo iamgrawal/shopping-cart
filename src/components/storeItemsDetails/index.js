@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import StoreItem from '../storeItem';
+import itemsList from '../../utils/items-list';
 
 export default class StoreItemsDetails extends Component {
 	static propTypes = {
@@ -10,7 +12,11 @@ export default class StoreItemsDetails extends Component {
 		return (
 			<div className="col-md-8 store-items-container">
 				<div className="container-fluid">
-					<ul className="store-details-container"></ul>
+					<ul className="store-details-container">
+						{Object.keys(itemsList).map(category => {
+							return itemsList[category].map(item => <StoreItem item={item} />);
+						})}
+					</ul>
 				</div>
 			</div>
 		);

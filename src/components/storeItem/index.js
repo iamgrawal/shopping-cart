@@ -1,12 +1,28 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import ItemActions from '../../containers/ItemActions';
+import imagePlaceholder from '../../assets/images/imagePlaceholder.png';
 export default class StoreItem extends Component {
 	static propTypes = {
-		prop: PropTypes
+		item: PropTypes.object
 	};
 
 	render() {
-		return <div>StoreItem</div>;
+		const { item } = this.props;
+		return (
+			<li>
+				<div class="store-item">
+					<img src={imagePlaceholder} alt="imagePlaceholder" />
+					<div className="item">
+						<span className="item-name">{item.itemName}</span>
+						<br />
+						<span className="price">₹{item.price}</span>
+						<br />
+						<ItemActions item={item} />
+					</div>
+				</div>
+			</li>
+		);
 	}
 }

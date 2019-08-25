@@ -12,6 +12,17 @@
 }
 
 $light-text: rgb(87, 94, 115);
+$border-color: #dfdfdf;
+$vibrant-green: rgb(0, 192, 139);
+
+/* misclaneous */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
 
 body {
   margin: 0;
@@ -27,6 +38,11 @@ body {
   height: calc(100vh - 56px);
 }
 
+.cart-column,
+.store-categories-container {
+  border-right: 0.5px solid $border-color;
+}
+
 .heading,
 .header h1 {
   font-size: 28px;
@@ -39,6 +55,20 @@ body {
 
 .navbar {
   background-color: rgb(23, 30, 48);
+}
+
+li.nav-item {
+  color: #fff;
+}
+
+li.nav-item svg {
+  height: 34px;
+  margin: auto 12px;
+}
+
+li.nav-item svg:hover {
+  color: $vibrant-green;
+  cursor: pointer;
 }
 
 /* Details Column */
@@ -69,21 +99,87 @@ body {
   width: 60%;
 }
 
+.items-container {
+  border-top: 0.5px solid $border-color;
+}
+
 .store-items-container {
   height: calc(100vh - 175px);
+  overflow-y: scroll;
 }
 
 .store-categories-container,
 .store-details-container {
   height: 100%;
   overflow-y: scroll;
+  list-style: none;
+  padding: 0;
 }
+
+.store-categories-container li {
+  height: 36px;
+  width: 100%;
+  margin: 8px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 4px;
+  overflow: hidden;
+}
+
+.store-categories-container li:hover {
+  color: $vibrant-green;
+  cursor: pointer;
+}
+
+.store-item {
+  display: flex;
+  margin: 18px 0px;
+}
+
+.store-item:hover {
+  span.item-name {
+    color: $vibrant-green;
+  }
+}
+
+.store-item img {
+  width: 128px;
+}
+
+span.item-name {
+  font-size: 20px;
+  font-family: 'Gilroy-SemiBold';
+}
+
+.item {
+  margin-left: 24px;
+}
+
+.item-actions {
+  margin: 12px 0px;
+}
+
+.item-actions button {
+  border: none;
+  box-shadow: #fff;
+  font-size: 24px;
+  margin: auto 8px;
+
+  &:hover {
+    color: $vibrant-green;
+  }
+}
+
+.item-actions input {
+  display: inline-block;
+  width: 32px;
+  border: 2px solid $vibrant-green;
+  border-radius: 4px;
+  text-align: center;
+}
+
 
 /* Cart Column */
-
-.cart-column {
-  border-right: 0.5px solid #dfdfdf;
-}
 
 .heading {
   text-align: center;
@@ -122,10 +218,10 @@ body {
 .checkout {
   width: 50%;
   margin: 0 25%;
-  border: 1px solid rgb(0, 192, 139);
+  border: 1px solid $vibrant-green;
   border-radius: 4px;
   height: 40px;
-  background-color: rgb(0, 192, 139);
+  background-color: $vibrant-green;
   color: #fff;
   text-transform: capitalize;
 }
