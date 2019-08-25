@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eed65a08.chunk.css",
+    "main.js": "/static/js/main.b2bb832d.chunk.js",
+    "main.js.map": "/static/js/main.b2bb832d.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.fd7bcbae.js",
+    "runtime~main.js.map": "/static/js/runtime~main.fd7bcbae.js.map",
+    "static/js/2.c43bf158.chunk.js": "/static/js/2.c43bf158.chunk.js",
+    "static/js/2.c43bf158.chunk.js.map": "/static/js/2.c43bf158.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c01ab14b6aac42e19f4afc47ad08d97c.js": "/precache-manifest.c01ab14b6aac42e19f4afc47ad08d97c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.eed65a08.chunk.css.map": "/static/css/main.eed65a08.chunk.css.map",
+    "static/media/index.scss": "/static/media/Gilroy-SemiBold.989947b0.woff",
+    "static/media/store-banner.jpg": "/static/media/store-banner.559e1310.jpg"
+  }
+}
